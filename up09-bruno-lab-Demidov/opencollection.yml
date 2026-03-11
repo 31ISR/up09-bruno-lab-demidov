@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: up09-bruno-lab-Demidov
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMyMjA3MDk4MDksInVzZXJuYW1lIjoiZGVtaWRvdiIsImlhdCI6MTc3MzIyMDcwOSwiZXhwIjoxNzczMzA3MTA5fQ.geY9lnqY4udAAvrA55UDk0gMEMIOx8KwPlx48Hz34sE
+  variables:
+    - name: base_url
+      value: https://kitek.ktkv.dev/marketplace
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
